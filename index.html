@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Quantico&display=swap" rel="stylesheet">
+        
+        <title>Portfolio de Tomatsuu</title>
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+    <body id="home">
+        <header class="main-header">
+            <div class="logo">
+            <a href="#home">
+                <img src="logo.jpg" alt="logo">
+            </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#functionment-scroll">Fonctionnement</a></li>
+                    <li><a href="#projects-scroll">Projets</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScxRl3ZZpmRfuxgK8HUe9PxCS88EHBIwgz6NPeg4BFUCmsGzw/viewform?usp=pp_url&entry.82562884=5&entry.1741432756=J'ai+aimé/Je+n'ai+pas+aimé+son+travail+car..." target="_blank" rel="noopener">Avis</a></li>
+                    <li><a href="contactForm.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="alignment">
+        <h2>Tomatsuu,</h2>
+        <h1>Monteur Vidéo Passionné<span class="font-change-dot">.</span></h1>
+        <div class="scrollIMG">
+        <a href="#functionment-scroll"><img src="double-arrow-down.png" alt="scroll"></a>
+        </div>
+        </div>
+
+        <div id="functionment-scroll" class="functionment">
+        <div class="align-all">
+        <div class="first-bubble">
+            <h3>TITLE 1</h3>
+            <p>texte texte texte</p>
+        </div>
+
+        <div class="second-bubble">
+            <h3>TITLE 2</h3>
+            <p>texte texte texte</p>
+        </div>
+            <div class="second-bubble">
+            <h3>QUALITÉS & DÉFAUTS</h3>
+            <p>texte texte texte</p>
+        </div>
+
+        <div class="scrollIMG2">
+        <a href="#projects-scroll"><img src="double-arrow-down.png" alt="scroll"></a>
+        </div>
+
+        </div>
+        </div>
+
+        <div id="projects-scroll" class="projects">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JJtAZiWQkPA?si=T0KI5uS3Iak_ve8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JMNxPJTEWOU?si=7-zHB8PNbERsc4O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </div>
+        </div>
+
+    <script>
+        const header = document.querySelector('.main-header');
+        window.addEventListener('scroll', () => {
+
+        if (window.scrollY > 80) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        });
+    </script>
+    </body>
+</html>

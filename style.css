@@ -1,0 +1,127 @@
+.functionment {
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+
+.first-bubble:hover {
+    transform: scale(1.05);
+    z-index: 10; 
+    position: relative;
+}
+
+.first-bubble:hover h2::after {
+    width: 100%;
+}
+
+.font-change {
+    font-size: 30px;
+    font-family: "Style Script";
+    color: rgb(172, 47, 255);
+
+    text-shadow: 0px 0px 0px rgb(157, 10, 255);
+    transition: text-shadow 0.1s ease-in-out;
+}
+
+.first-bubble:hover .font-change {
+    text-shadow: 0px 0px 30px rgb(157, 10, 255);
+}
+
+.second-bubble {
+    margin-top: 300px;
+    margin-left: -69px;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: content-box;
+    width: 479px;
+    height: 474px;
+    background-color: rgba(110, 110, 110, 0.507);
+    border-radius: 30px;
+    
+    margin-bottom: 500px;
+
+    transition: transform 0.1s ease-in-out;
+}
+
+.second-bubble:hover {
+    transform: scale(1.05);
+    z-index: 10; 
+    position: relative;
+}
+
+.second-bubble:hover h3::after {
+    width: 100%;
+}
+
+.first-bubble {
+    margin-top: 300px;
+    margin-left: 30px;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: content-box;
+    width: 479px;
+    height: 474px;
+    background-color: rgba(110, 110, 110, 0.507);
+    border-radius: 30px;
+
+    margin-bottom: 500px;
+
+    transition: transform 0.1s ease-in-out;
+}
+
+.align-all {
+    display: flex;
+    gap: 250px;
+    align-items: flex-start;
+}
+
+.first-bubble:hover {
+    transform: scale(1.05);
+    z-index: 10; 
+    position: relative;
+}
+
+.first-bubble:hover h3::after {
+    width: 100%;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Inconsolata", monospace;
+    color: rgb(162, 102, 202);
+    border-bottom: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 5%;
+    border-bottom: solid white 1.8px;
+    margin-right: auto;
+    padding-top: 2px;
+
+    transition: width 0.3s ease-in-out;
+}
+
+.functionment p {
+    font-size: 18px;
+    font-family: "JetBrains Mono";
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(94, 169, 255, 0.753);
+    text-shadow: 0px 0x 0px rgb(255, 255, 255);
+}
+
+.projects {
+    padding-bottom: 200px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
